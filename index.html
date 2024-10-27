@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CashForViews - Earn Money Watching Videos</title>
+    <style>
+        :root {
+            --primary-black: #1a1a1a;
+            --primary-white: #ffffff;
+            --gray: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-white);
+            color: var(--primary-black);
+        }
+
+        nav {
+            background-color: var(--primary-black);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .nav-links a {
+            color: var(--primary-white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #bababa;
+        }
+
+        .hero {
+            margin-top: 60px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: var(--primary-black);
+            color: var(--primary-white);
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            background-color: var(--primary-white);
+            color: var(--primary-black);
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            background-color: var(--primary-white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--gray);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: var(--primary-black);
+            color: var(--primary-white);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--primary-white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #bababa;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="https://example.com">Home</a>
+            <a href="https://example.com/referral">Referral Program</a>
+            <a href="https://example.com/rewards">Rewards</a>
+            <a href="https://example.com/dashboard">Dashboard</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Turn Your Watch Time Into Cash</h1>
+        <p>Join thousands of users who earn money by simply watching entertaining videos. Start earning today!</p>
+        <button class="cta-button">Start Earning Now</button>
+    </section>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Watch & Earn</h3>
+                <p>Get paid for every video you watch. It's that simple!</p>
+            </div>
+            <div class="feature-card">
+                <h3>Daily Bonuses</h3>
+                <p>Complete daily tasks to earn bonus rewards</p>
+            </div>
+            <div class="feature-card">
+                <h3>Instant Payouts</h3>
+                <p>Withdraw your earnings instantly to your preferred payment method</p>
+            </div>
+            <div class="feature-card">
+                <h3>Referral Rewards</h3>
+                <p>Earn extra by inviting friends to join the platform</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 CashForViews. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://example.com/privacy">Privacy Policy</a>
+            <a href="https://example.com/terms">Terms of Use</a>
+            <a href="https://example.com/about">About Us</a>
+            <a href="https://example.com/contact">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            window.location.href = 'https://example.com/signup';
+        });
+    </script>
+</body>
+</html>
