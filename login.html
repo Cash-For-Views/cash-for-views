@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CashForViews - Login</title>
+    <style>
+        :root {
+            --primary-black: #1a1a1a;
+            --primary-white: #ffffff;
+            --gray: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-white);
+            color: var(--primary-black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 2rem;
+            background-color: var(--gray);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-black);
+            color: var(--primary-white);
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .login-container button:hover {
+            transform: scale(1.05);
+        }
+
+        .login-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .login-links a {
+            color: var(--primary-black);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .login-links a:hover {
+            color: #bababa;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login to CashForViews</h2>
+    
+    <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <div class="login-links">
+            <a href="forgot-password.html">Forgot Password?</a>
+            <a href="signup.html">Create Account</a>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2024 CashForViews. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Placeholder action for login
+        alert('Login successful for: ' + email);
+    });
+</script>
+
+</body>
+</html>
